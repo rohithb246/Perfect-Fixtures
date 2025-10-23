@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49A3B887-7BFE-412C-B7E5-EB9C506C4187}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Perfect_Fixtures_Final.My.MyApplication</StartupObject>
+    <RootNamespace>Perfect_Fixtures_Final</RootNamespace>
+    <AssemblyName>Perfect Fixtures Final</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Perfect Fixtures Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Perfect Fixtures Final.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\New folder\Project Backup\Project\New folder\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\New folder\Project Backup\Project\New folder\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beds.Designer.vb">
+      <DependentUpon>Beds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Beds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedsCHistory.Designer.vb">
+      <DependentUpon>BedsCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BedsCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedsSales.Designer.vb">
+      <DependentUpon>BedsSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BedsSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedsStock.Designer.vb">
+      <DependentUpon>BedsStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BedsStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BedsSupplier.Designer.vb">
+      <DependentUpon>BedsSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BedsSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHistory.Designer.vb">
+      <DependentUpon>CustomerHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Decor.Designer.vb">
+      <DependentUpon>Decor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Decor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecorCHistory.Designer.vb">
+      <DependentUpon>DecorCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DecorCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecorSales.Designer.vb">
+      <DependentUpon>DecorSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DecorSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecorStock.Designer.vb">
+      <DependentUpon>DecorStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DecorStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecorSupplier.Designer.vb">
+      <DependentUpon>DecorSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DecorSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dining.Designer.vb">
+      <DependentUpon>Dining.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dining.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningCHistory.Designer.vb">
+      <DependentUpon>DiningCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiningCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningSales.Designer.vb">
+      <DependentUpon>DiningSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiningSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningStock.Designer.vb">
+      <DependentUpon>DiningStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiningStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningSupplier.Designer.vb">
+      <DependentUpon>DiningSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiningSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMainMenu.Designer.vb">
+      <DependentUpon>EmployeeMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.vb">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.vb">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kids.Designer.vb">
+      <DependentUpon>Kids.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kids.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KidsCHistory.Designer.vb">
+      <DependentUpon>KidsCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KidsCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KidsSales.Designer.vb">
+      <DependentUpon>KidsSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KidsSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KidsStock.Designer.vb">
+      <DependentUpon>KidsStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KidsStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KidsSupplier.Designer.vb">
+      <DependentUpon>KidsSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KidsSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenu.Designer.vb">
+      <DependentUpon>AdminMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shelf.Designer.vb">
+      <DependentUpon>Shelf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shelf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShelfCHistory.Designer.vb">
+      <DependentUpon>ShelfCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShelfCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShelfSales.Designer.vb">
+      <DependentUpon>ShelfSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShelfSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShelfStock.Designer.vb">
+      <DependentUpon>ShelfStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShelfStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShelfSupplier.Designer.vb">
+      <DependentUpon>ShelfSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShelfSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sofa.Designer.vb">
+      <DependentUpon>Sofa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sofa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SofaCHistory.Designer.vb">
+      <DependentUpon>SofaCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SofaCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SofaSales.Designer.vb">
+      <DependentUpon>SofaSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SofaSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SofaStock.Designer.vb">
+      <DependentUpon>SofaStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SofaStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SofaSupplier.Designer.vb">
+      <DependentUpon>SofaSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SofaSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.vb">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier.Designer.vb">
+      <DependentUpon>Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.vb">
+      <DependentUpon>UserRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wardrobe.Designer.vb">
+      <DependentUpon>Wardrobe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wardrobe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardrobeCHistory.Designer.vb">
+      <DependentUpon>WardrobeCHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeCHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardrobeSales.Designer.vb">
+      <DependentUpon>WardrobeSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardrobeStock.Designer.vb">
+      <DependentUpon>WardrobeStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WardrobeSupplier.Designer.vb">
+      <DependentUpon>WardrobeSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Beds.resx">
+      <DependentUpon>Beds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedsCHistory.resx">
+      <DependentUpon>BedsCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedsSales.resx">
+      <DependentUpon>BedsSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedsStock.resx">
+      <DependentUpon>BedsStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedsSupplier.resx">
+      <DependentUpon>BedsSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHistory.resx">
+      <DependentUpon>CustomerHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decor.resx">
+      <DependentUpon>Decor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecorCHistory.resx">
+      <DependentUpon>DecorCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecorSales.resx">
+      <DependentUpon>DecorSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecorStock.resx">
+      <DependentUpon>DecorStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecorSupplier.resx">
+      <DependentUpon>DecorSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dining.resx">
+      <DependentUpon>Dining.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningCHistory.resx">
+      <DependentUpon>DiningCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningSales.resx">
+      <DependentUpon>DiningSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningStock.resx">
+      <DependentUpon>DiningStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningSupplier.resx">
+      <DependentUpon>DiningSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMainMenu.resx">
+      <DependentUpon>EmployeeMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kids.resx">
+      <DependentUpon>Kids.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KidsCHistory.resx">
+      <DependentUpon>KidsCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KidsSales.resx">
+      <DependentUpon>KidsSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KidsStock.resx">
+      <DependentUpon>KidsStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KidsSupplier.resx">
+      <DependentUpon>KidsSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainMenu.resx">
+      <DependentUpon>AdminMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shelf.resx">
+      <DependentUpon>Shelf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShelfCHistory.resx">
+      <DependentUpon>ShelfCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShelfSales.resx">
+      <DependentUpon>ShelfSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShelfStock.resx">
+      <DependentUpon>ShelfStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShelfSupplier.resx">
+      <DependentUpon>ShelfSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sofa.resx">
+      <DependentUpon>Sofa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SofaCHistory.resx">
+      <DependentUpon>SofaCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SofaSales.resx">
+      <DependentUpon>SofaSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SofaStock.resx">
+      <DependentUpon>SofaStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SofaSupplier.resx">
+      <DependentUpon>SofaSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wardrobe.resx">
+      <DependentUpon>Wardrobe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardrobeCHistory.resx">
+      <DependentUpon>WardrobeCHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardrobeSales.resx">
+      <DependentUpon>WardrobeSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardrobeStock.resx">
+      <DependentUpon>WardrobeStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WardrobeSupplier.resx">
+      <DependentUpon>WardrobeSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlockog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\availability final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logopng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sofa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sofa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wardrobe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedbg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed4bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sofabg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sofa2bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern-living-room-interior-background-dark-wall-scandinavian-style-3d-illustration-3d-rendering_208753-98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningbg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningbg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningbg5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelfbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelfbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelfbg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wardrobebg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering_41470-3512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedbg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sofastk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background_41470-1528.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningbg21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningbg41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decorbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\godown.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
